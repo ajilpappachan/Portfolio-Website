@@ -1,16 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
-import HomeCover from './component/homeCover/HomeCover';
+import NavBar from './component/navbar/NavBar';
+
+//Pages
+import Home from './pages/home/Home';
 
 class App extends Component {
-render()
-{
-  return (
-    <div>
-      <HomeCover/>
-    </div>
-  );
-}
+  constructor() {
+    super();
+    this.state = {
+      route: ''
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <NavBar />
+        <Home />
+      </div>
+    );
+  }
 }
 
 export default App;
