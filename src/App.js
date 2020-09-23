@@ -1,26 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import NavBar from './component/navbar/NavBar';
 
-//Pages
-import Home from './pages/home/Home';
+import Navbar from './components/navbar/Navbar';
 
-class App extends Component {
-  constructor() {
-    super();
-    this.state = {
-      route: ''
-    };
-  }
-
-  render() {
-    return (
-      <div>
-        <NavBar />
-        <Home />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <div>
+      <Navbar/>
+    </div>
+  );
 }
 
 export default App;
