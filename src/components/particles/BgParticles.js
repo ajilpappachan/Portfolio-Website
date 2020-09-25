@@ -13,7 +13,7 @@ const BgParticles = () =>
           "color": {
             "value": "#283044"
           },
-          "image": "https://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif",
+          "image": "",
           "position": "0 50%",
           "repeat": "no-repeat",
           "size": "60%",
@@ -284,7 +284,7 @@ const BgParticles = () =>
         "pauseOnBlur": true
       }}
     />
-    <img src='https://vincentgarreau.com/particles.js/assets/img/kbLd9vb_new.gif' 
+    <img src='https://uiaczw.dm.files.1drv.com/y4pgzpAb5261BvauszKfkVbwsz2IaiKfVIuLtSKfI4uPEFu-N7yuXsr4nJYxHJh-wgTFSrauFh2DCmSbsOaxCYmYLELYuCV4UhNAH8yP87UYdylTJ8se8i9vympifycNDtDevvmt6V_EpSCOhDkONlRfEtZcN4Y7iW9AhhWb0C9eP8EXAV-xxFFeViaAbyeTQ6e_Z3NhHWuJGzY5qcfIyv6iUV4qtMW5_uTc4XVCyjeaEE/nyan%20cat.gif?download&psid=1' 
     alt='Cat'
     className='cat w-50 h-auto-ns'
     />

@@ -6,6 +6,7 @@ import Navbar from './components/navbar/Navbar';
 import BgParticles from './components/particles/BgParticles';
 
 import HomeCenter from './components/centerFiles/HomeCenter';
+import PortfolioOverview from './components/homeCards/PortfolioOverview';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <BgParticles/>
       <Navbar/>
       <HomeCenter/>
+      <PortfolioOverview/>
     </div>
   );
 }
