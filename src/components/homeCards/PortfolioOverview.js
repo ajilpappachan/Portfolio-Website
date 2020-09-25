@@ -17,7 +17,8 @@ const PortfolioOverview = () => {
                         <iframe
                             src="https://onedrive.live.com/embed?resid=7AC901B0DB2F5DD0%2113718&amp;authkey=%21AE2HBBtHISyY508&amp;em=2&amp;wdAr=1.7777777777777777"
                             className="responsive-iframe"
-                            title="portfolioOverview">
+                            title="portfolioOverview"
+                            frameBorder='0'>
                             This is an embedded <a target="_blank" rel="noopener noreferrer" href="https://office.com">Microsoft Office</a> presentation, powered by <a target="_blank" rel="noopener noreferrer" href="https://office.com/webapps">Office</a>.
                         </iframe>
                     </div>
