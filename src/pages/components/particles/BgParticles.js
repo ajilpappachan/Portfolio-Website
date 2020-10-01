@@ -284,7 +284,7 @@ const BgParticles = () =>
         "pauseOnBlur": true
       }}
     />
-    <img src='https://uiaczw.dm.files.1drv.com/y4pgzpAb5261BvauszKfkVbwsz2IaiKfVIuLtSKfI4uPEFu-N7yuXsr4nJYxHJh-wgTFSrauFh2DCmSbsOaxCYmYLELYuCV4UhNAH8yP87UYdylTJ8se8i9vympifycNDtDevvmt6V_EpSCOhDkONlRfEtZcN4Y7iW9AhhWb0C9eP8EXAV-xxFFeViaAbyeTQ6e_Z3NhHWuJGzY5qcfIyv6iUV4qtMW5_uTc4XVCyjeaEE/nyan%20cat.gif?download&psid=1' 
+    <img src='https://uiaczw.dm.files.1drv.com/y4mVk9JBysQz6qfiZN9gRBEaXkWrC7Gheq_2SxkHVjO9Dak-8IbbfkAMK-JQDHtq0JbthoiHJdBfbxgisPy-cN8zvFIh5VjUe68r7Ti_eaaUFa7IpbRzi08uGOQ8yBk7wwedic3SXwSSdACS-Kp0_mAQADTRMo8FRHgwsXWSfzVlqqiPFwzxOYta6cBIotvIpdGTk_Hv7oWbV_d2D7DE8gyKQ' 
     alt='Cat'
     className='cat w-50 h-auto-ns'
     />

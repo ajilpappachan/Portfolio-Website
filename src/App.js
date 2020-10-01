@@ -1,24 +1,32 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 import 'tachyons';
+import { BrowserRouter as Router, Route, Switch, Redirect } from 'react-router-dom';
 
-import Navbar from './components/navbar/Navbar';
-import BgParticles from './components/particles/BgParticles';
+import NotFound from './pages/404';
+import Home from './pages/Home';
+import Programming from './pages/Programming';
+import GameDev from './pages/GameDev';
+import Modelling from './pages/Modelling';
+import FilmMaking from './pages/FilmMaking';
 
-import HomeCenter from './components/centerFiles/HomeCenter';
-import PortfolioOverview from './components/homeCards/PortfolioOverview';
-import HomeSocial from './components/homeCards/HomeSocial';
+class App extends Component {
+  render() {
+    return (
+        <Router>
+          <Switch>
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/programming' component={Programming}/>
+            <Route exact path='/gamedev' component={GameDev}/>
+            <Route exact path='/modelling' component={Modelling}/>
+            <Route exact path='/filmmaking' component={FilmMaking}/>
 
-function App() {
-  return (
-    <div>
-      <BgParticles/>
-      <Navbar/>
-      <HomeCenter/>
-      <PortfolioOverview/>
-      <HomeSocial/>
-    </div>
-  );
+            <Route path='/404' component={NotFound}/>
+            <Redirect to='/404'/>
+          </Switch>
+        </Router>
+    );
+  }
 }
 
 export default App;
