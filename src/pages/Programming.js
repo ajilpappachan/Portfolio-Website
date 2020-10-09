@@ -66,7 +66,7 @@ class Programming extends Component {
     render() {
 
         setTimeout(this.updateText, 0.5);
-        return (<div style={{ backgroundColor: '#7d82b8' }}>
+        return (<div className="programming">
             {
                 this.state.nav ? <Navbar /> : null
             }

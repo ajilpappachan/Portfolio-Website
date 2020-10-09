@@ -8,21 +8,21 @@ const ProgrammingCards = () => {
                 cardType="card"
                 language="HTML, JavaScript, CSS"
                 libraries="React.js"
-                title="CatFriends"
+                title="Portfolio Website"
                 date="September 2020"
                 company="AN Games"
                 place="Ernakulam, Kerala"
-                details="A simple Web App created using React.js"
+                details="Ajil Pappachan's personal portfolio website"
             />
             <PCardTemplate
-                cardType="card"
+                cardType="card green"
                 language="HTML, JavaScript, CSS"
                 libraries="React.js"
-                title="CatFriends"
+                title="Face Recognition Brain"
                 date="September 2020"
                 company="AN Games"
                 place="Ernakulam, Kerala"
-                details="A simple Web App created using React.js"
+                details="React Website Implementing Face Recognition API"
             />
             <PCardTemplate
                 cardType="card"

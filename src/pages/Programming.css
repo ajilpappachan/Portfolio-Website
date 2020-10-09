@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Abel');
+
 html {
   scroll-behavior: smooth;
+}
+
+.programming {
+  background-color: #7d82b8;
+  font-family: Abel, Arial, Verdana, sans-serif;
 }
 
 pre {
