@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 pre {
     white-space: pre-wrap;
     word-wrap: break-word;

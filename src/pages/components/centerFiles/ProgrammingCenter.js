@@ -5,11 +5,19 @@ let data = {
     use the console to navigate around this webpage.
     --Help
     nav     Toggle Navigation Bar
-    foot    Toggle Footer`,
+    foot    Toggle Footer
+    cards   Toggle Project Cards Visibility
+    
+    
+    If you are confused, you are probably here to view my Programming projects. type in "cards" to toggle it's visibility.`,
 
     invalidCode: `\n\nThe Command you entered is invalid please try again!`,
 
     nav: `\n\nNavbar visibility is set to `,
+
+    foot: `\n\nFooter visibility is set to `,
+
+    cards: `\n\nProject Cards Visibility is set to `,
 
     tip: `\n\nType in help anytime to go to the help page!`
 }
