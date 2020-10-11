@@ -1,10 +1,10 @@
 import React from 'react';
-import PCardTemplate from './PCardTemplate';
+import PCard from './PCard';
 
 const ProgrammingCards = () => {
     return (
         <div className="flex flex-wrap">
-            <PCardTemplate
+            <PCard
                 cardType="card"
                 language="HTML, JavaScript, CSS"
                 libraries="React.js"
@@ -13,8 +13,11 @@ const ProgrammingCards = () => {
                 company="AN Games"
                 place="Ernakulam, Kerala"
                 details="Ajil Pappachan's personal portfolio website"
+                fullDetails="Ajil Pappachan's personal portfolio website created using HTML, CSS and javaScript using React.js"
+                link="https://ajilpappachan.web.app"
+                git="https://github.com/ajilpappachan/Portfolio-Website"
             />
-            <PCardTemplate
+            <PCard
                 cardType="card green"
                 language="HTML, JavaScript, CSS"
                 libraries="React.js"
@@ -23,8 +26,11 @@ const ProgrammingCards = () => {
                 company="AN Games"
                 place="Ernakulam, Kerala"
                 details="React Website Implementing Face Recognition API"
+                fullDetails="React Website created by Ajil Pappachan to demonstrate the usage of APIs and the functioning of the front end in cooperation with the backend server"
+                link="https://ajilfacerecognitionbrain.web.app/"
+                git="https://github.com/ajilpappachan/Face-Recognition-Brain"
             />
-            <PCardTemplate
+            <PCard
                 cardType="card"
                 language="HTML, JavaScript, CSS"
                 libraries="React.js"
@@ -33,8 +39,11 @@ const ProgrammingCards = () => {
                 company="AN Games"
                 place="Ernakulam, Kerala"
                 details="A simple Web App created using React.js"
+                fullDetails="React Web App created by Ajil Pappachan as part of learning React.js"
+                link="https://ajucatfriends.web.app/"
+                git="https://github.com/ajilpappachan/CatFriends"
             />
-            <PCardTemplate
+            <PCard
                 cardType="card green"
                 language="C++"
                 libraries="OpenGL"
@@ -42,7 +51,10 @@ const ProgrammingCards = () => {
                 date="December 2019"
                 company="ICAT Design and Media College"
                 place="Bangalore"
-                details="Castle is a 3D environment created with C++ and OpenGL graphics as output for Graphics Programming module of L5 Game Programming at ICAT Design and Media College, Bangalore."
+                details="3D environment using OpenGL and C++"
+                fullDetails="Castle is a 3D environment created with C++ and OpenGL graphics as output for Graphics Programming module of L5 Game Programming at ICAT Design and Media College, Bangalore."
+                video="https://www.youtube.com/embed/j_2yD3cow60"
+                git="https://github.com/ajilpappachan/OpenGL-Castle"
             />
         </div>);
 }

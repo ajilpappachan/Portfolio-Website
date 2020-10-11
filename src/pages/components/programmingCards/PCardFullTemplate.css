@@ -1,6 +1,6 @@
-.card {
-  width: 450px;
-  height: 250px;
+.fullcard {
+  width: 900px;
+  height: 500px;
   background-color: #fff;
   background: linear-gradient(#f8f8f8, #fff);
   box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
@@ -10,39 +10,56 @@
   margin: 1.5rem;
 }
 
-.card h1 {
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  
+}
+
+.fullcard h1 {
   text-align: center;
 }
 
-.card .additional {
+.fullcard .full-additional {
   position: absolute;
-  width: 150px;
+  width: 300px;
   height: 100%;
   background: linear-gradient(#dE685E, #EE786E);
-  transition: width 0.4s;
   overflow: hidden;
   z-index: 2;
 }
 
-.card.green .additional {
+.fullcard.green .full-additional {
   background: linear-gradient(#92bCa6, #A2CCB6);
 }
 
 
-.card:hover .additional {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
+.fullcard:hover {
   cursor: pointer;
 }
 
-.card .additional .item-card {
-  width: 150px;
+.fullcard .full-additional .item-fullcard {
+  width: 300px;
   height: 100%;
   position: relative;
   float: left;
 }
 
-.card .additional .item-card::after {
+.fullcard .full-additional .item-fullcard::after {
   content: "";
   display: block;
   position: absolute;
@@ -52,8 +69,8 @@
   border-left: 2px solid rgba(0,0,0,0.025);
 }
 
-.card .additional .item-card .language,
-.card .additional .item-card .libraries {
+.fullcard .full-additional .item-fullcard .language,
+.fullcard .full-additional .item-fullcard .libraries {
   top: 15%;
   color: #fff;
   text-transform: uppercase;
@@ -65,46 +82,46 @@
   white-space: nowrap;
 }
 
-.card .additional .item-card .libraries {
+.fullcard .full-additional .item-fullcard .libraries {
   top: 85%;
 }
 
-.card .additional .item-card svg {
+.fullcard .full-additional .item-fullcard svg {
   top: 50%;
 }
 
-.card .additional .more-info {
-  width: 300px;
+.fullcard .full-additional .more-info {
+  width: 600px;
   float: left;
   position: absolute;
-  left: 150px;
+  left: 300px;
   height: 100%;
 }
 
-.card .additional .more-info h1 {
+.fullcard .full-additional .more-info h1 {
   color: #fff;
   margin-bottom: 0;
 }
 
-.card.green .additional .more-info h1 {
+.fullcard.green .full-additional .more-info h1 {
   color: #224C36;
 }
 
-.card .additional .coords {
+.fullcard .full-additional .coords {
   margin: 0 1rem;
   color: #fff;
   font-size: 1rem;
 }
 
-.card.green .additional .coords {
+.fullcard.green .full-additional .coords {
   color: #325C46;
 }
 
-.card .additional .coords span + span {
+.fullcard .full-additional .coords span + span {
   float: right;
 }
 
-.card .additional .stats {
+.fullcard .full-additional .stats {
   font-size: 2rem;
   display: flex;
   position: absolute;
@@ -115,37 +132,37 @@
   color: #fff;
 }
 
-.card.green .additional .stats {
+.fullcard.green .full-additional .stats {
   color: #325C46;
 }
 
-.card .additional .stats > div {
+.fullcard .full-additional .stats > div {
   flex: 1;
   text-align: center;
 }
 
-.card .additional .stats i {
+.fullcard .full-additional .stats i {
   display: block;
 }
 
-.card .additional .stats div.title {
+.fullcard .full-additional .stats div.title {
   font-size: 0.75rem;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.card .additional .stats div.value {
+.fullcard .full-additional .stats div.value {
   font-size: 1.5rem;
   font-weight: bold;
   line-height: 1.5rem;
 }
 
-.card .additional .stats div.value.infinity {
+.fullcard .full-additional .stats div.value.infinity {
   font-size: 2.5rem;
 }
 
-.card .general {
-  width: 300px;
+.fullcard .general {
+  width: 600px;
   height: 100%;
   position: absolute;
   top: 0;
@@ -156,7 +173,7 @@
   padding-top: 0;
 }
 
-.card .general .more {
+.fullcard .general .more {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
@@ -173,9 +190,9 @@
     font-size: 0.7rem;
   }
   
-  .card {
+  .fullcard {
     width: 300px;
-    height: 167px;
+    height: 334px;
     background-color: #fff;
     background: linear-gradient(#f8f8f8, #fff);
     box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
@@ -185,11 +202,11 @@
     margin: 1rem;
   }
   
-  .card h1 {
+  .fullcard h1 {
     text-align: center;
   }
   
-  .card .additional {
+  .fullcard .full-additional {
     position: absolute;
     width: 100px;
     height: 100%;
@@ -199,24 +216,24 @@
     z-index: 2;
   }
   
-  .card.green .additional {
+  .fullcard.green .full-additional {
     background: linear-gradient(#92bCa6, #A2CCB6);
   }
   
   
-  .card:hover .additional {
+  .fullcard:hover .full-additional {
     width: 100%;
     border-radius: 0 5px 5px 0;
   }
   
-  .card .additional .item-card {
+  .fullcard .full-additional .item-fullcard {
     width: 100px;
     height: 100%;
     position: relative;
     float: left;
   }
   
-  .card .additional .item-card::after {
+  .fullcard .full-additional .item-fullcard::after {
     content: "";
     display: block;
     position: absolute;
@@ -226,8 +243,8 @@
     border-left: 2px solid rgba(0,0,0,0.025);
   }
   
-  .card .additional .item-card .language,
-  .card .additional .item-card .libraries {
+  .fullcard .full-additional .item-fullcard .language,
+  .fullcard .full-additional .item-fullcard .libraries {
     top: 15%;
     color: #fff;
     text-transform: uppercase;
@@ -239,15 +256,15 @@
     white-space: nowrap;
   }
   
-  .card .additional .item-card .libraries {
+  .fullcard .full-additional .item-fullcard .libraries {
     top: 85%;
   }
   
-  .card .additional .item-card svg {
+  .fullcard .full-additional .item-fullcard svg {
     top: 50%;
   }
   
-  .card .additional .more-info {
+  .fullcard .full-additional .more-info {
     width: 200px;
     float: left;
     position: absolute;
@@ -255,30 +272,30 @@
     height: 100%;
   }
   
-  .card .additional .more-info h1 {
+  .fullcard .full-additional .more-info h1 {
     color: #fff;
     margin-bottom: 0;
   }
   
-  .card.green .additional .more-info h1 {
+  .fullcard.green .full-additional .more-info h1 {
     color: #224C36;
   }
   
-  .card .additional .coords {
+  .fullcard .full-additional .coords {
     margin: 0 1rem;
     color: #fff;
     font-size: 0.7rem;
   }
   
-  .card.green .additional .coords {
+  .fullcard.green .full-additional .coords {
     color: #325C46;
   }
   
-  .card .additional .coords span + span {
+  .fullcard .full-additional .coords span + span {
     float: right;
   }
   
-  .card .additional .stats {
+  .fullcard .full-additional .stats {
     font-size: 1.3rem;
     display: flex;
     position: absolute;
@@ -289,36 +306,36 @@
     color: #fff;
   }
   
-  .card.green .additional .stats {
+  .fullcard.green .full-additional .stats {
     color: #325C46;
   }
   
-  .card .additional .stats > div {
+  .fullcard .full-additional .stats > div {
     flex: 1;
     text-align: center;
   }
   
-  .card .additional .stats i {
+  .fullcard .full-additional .stats i {
     display: block;
   }
   
-  .card .additional .stats div.title {
+  .fullcard .full-additional .stats div.title {
     font-size: 0.5rem;
     font-weight: bold;
     text-transform: uppercase;
   }
   
-  .card .additional .stats div.value {
+  .fullcard .full-additional .stats div.value {
     font-size: 1rem;
     font-weight: bold;
     line-height: 1rem;
   }
   
-  .card .additional .stats div.value.infinity {
+  .fullcard .full-additional .stats div.value.infinity {
     font-size: 1.7rem;
   }
   
-  .card .general {
+  .fullcard .general {
     width: 200px;
     height: 100%;
     position: absolute;
@@ -330,7 +347,7 @@
     padding-top: 0;
   }
   
-  .card .general .more {
+  .fullcard .general .more {
     position: absolute;
     bottom: 1rem;
     right: 1rem;

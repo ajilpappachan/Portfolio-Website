@@ -16,7 +16,7 @@ class Programming extends Component {
             nav: false,
             foot: false,
             cards: false,
-            myRef: React.createRef()
+            myRef: React.createRef(),
         };
     }
 
@@ -43,7 +43,7 @@ class Programming extends Component {
     }
 
     checkCommands = () => {
-        switch (this.state.command) {
+        switch (this.state.command.toLowerCase()) {
             case "nav":
                 this.setState({ text: "", pendingText: data.nav + !this.state.nav + data.tip, nav: !this.state.nav });
                 break;
