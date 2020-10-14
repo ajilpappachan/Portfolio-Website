@@ -12,7 +12,6 @@ class PCard extends Component {
 
     displayFullCard = () => {
         this.setState({ showFullCard: !this.state.showFullCard });
-        console.log(this.state.showFullCard);
     }
 
     render() {
