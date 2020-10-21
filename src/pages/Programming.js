@@ -13,7 +13,6 @@ class Programming extends Component {
             pendingText: data.help,
             textIndex: 0,
             command: "",
-            input: false,
             nav: false,
             foot: false,
             cards: false,
@@ -44,7 +43,7 @@ class Programming extends Component {
     }
 
     checkCommands = () => {
-        this.setState({input: false});
+        this.setState({ input: false });
         switch (this.state.command.toLowerCase()) {
             case "nav":
                 this.setState({ text: "", pendingText: data.nav + !this.state.nav + data.tip, nav: !this.state.nav });
@@ -54,6 +53,7 @@ class Programming extends Component {
                 break;
             case "foot":
                 this.setState({ text: "", pendingText: data.foot + !this.state.foot + data.tip, foot: !this.state.foot });
+                setTimeout(this.scrollToMyRef, 100);
                 break;
             case "cards":
                 this.setState({ text: "", pendingText: data.cards + !this.state.cards + data.tip, cards: !this.state.cards });
@@ -85,9 +85,7 @@ class Programming extends Component {
                     </article>
                     <article className="br2 ba bg-black o-90 w-100 w-50-m w-75-l h-auto center shadow-5">
                         <div className="pa2 ph3-ns pb3-ns dt-ns dt--fixed-ns w-100">
-                            {
-                                this.state.input ?
-                                <div className="dt dt--fixed">
+                            <div className="dt dt--fixed">
                                 <div className="dtc tc white">
                                     <p>{`console -->`}</p>
                                 </div>
@@ -105,8 +103,6 @@ class Programming extends Component {
                                         onClick={this.checkCommands} />
                                 </div>
                             </div>
-                            : null
-                            }
                         </div>
                     </article>
                 </div>
@@ -115,10 +111,10 @@ class Programming extends Component {
                 {
                     this.state.cards ? <ProgrammingCards /> : null
                 }
+                {
+                    this.state.foot ? <Footer /> : null
+                }
             </div>
-            {
-                this.state.foot ? <Footer /> : null
-            }
         </div>);
     }
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollPrompt from './ScrollPrompt';
 import './3DModellingCenter.css';
 
 const ModellingCenter = () => {
@@ -15,6 +16,7 @@ const ModellingCenter = () => {
                     </div>
                 </article>
             </div>
+            <ScrollPrompt/>
         </article>
     )
 }

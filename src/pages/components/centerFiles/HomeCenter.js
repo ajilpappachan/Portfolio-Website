@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollPrompt from './ScrollPrompt';
 
 const HomeCenter = () => {
     return (
@@ -7,6 +8,7 @@ const HomeCenter = () => {
                 <h1 className="f7 f5-m f4-l fw6 tc">“I am seeking, I am striving, I am in it with all my heart.”</h1>
                 <h1 className="f7 f5-m f4-l fw6 tc">― Vincent van Gogh</h1>
             </div>
+            <ScrollPrompt/>
         </article>
     );
 }
