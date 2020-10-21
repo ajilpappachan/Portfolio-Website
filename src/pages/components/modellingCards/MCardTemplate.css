@@ -1,0 +1,11 @@
+.mcard {
+    width: 500px;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mcard {
+        width: 250px;
+        margin: 5px;
+    }
+}
