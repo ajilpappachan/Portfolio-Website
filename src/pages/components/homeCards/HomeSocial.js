@@ -18,7 +18,7 @@ const HomeSocial = () => {
                         <div className="bg-silver dib br3 pa3 ma2 grow bw2 shadow-5">
                             <a target='_blank' rel="noopener noreferrer" href="https://instagram.com/a_p_cubed">
                                 <img alt="Profile"
-                                    src="https://scontent-maa2-1.cdninstagram.com/v/t51.2885-19/s320x320/117157916_572776603399174_4999815156296294717_n.jpg?_nc_ht=scontent-maa2-1.cdninstagram.com&_nc_ohc=tXrXbsCSGHYAX_YCKZ4&oh=c497095c1ef40d860c5a4421130abf08&oe=5F986BCA"
+                                    src="https://scontent-maa2-2.cdninstagram.com/v/t51.2885-19/s320x320/117157916_572776603399174_4999815156296294717_n.jpg?_nc_ht=scontent-maa2-2.cdninstagram.com&_nc_ohc=aUj7wJdIKVgAX8jows2&_nc_tp=25&oh=f82d9771be8e025fd941e3dbd81538fa&oe=5FD7B3CA"
                                     width="150"
                                     height="150"></img>
                             </a>
