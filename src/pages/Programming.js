@@ -24,11 +24,15 @@ class Programming extends Component {
 
     updateText = () => {
         if (this.state.pendingText !== '') {
+            document.getElementById("cmdText").disabled = true;
             let character = this.state.pendingText[this.state.textIndex];
             this.setState({ text: this.state.text + character, textIndex: this.state.textIndex + 1 });
             if (this.state.textIndex === this.state.pendingText.length) {
                 this.setState({ textIndex: 0, pendingText: '', input: true });
             }
+        }
+        else {
+            document.getElementById("cmdText").disabled = false;
         }
     }
 
@@ -67,7 +71,7 @@ class Programming extends Component {
 
     render() {
 
-        setTimeout(this.updateText, 0.1);
+        setTimeout(this.updateText, 5);
         return (<div className="programming">
             {
                 this.state.nav ? <Navbar /> : null
@@ -91,6 +95,7 @@ class Programming extends Component {
                                 </div>
                                 <div className="dtc tc white">
                                     <input type="text"
+                                        id="cmdText"
                                         className="w-100"
                                         onChange={this.onCommandChange}
                                         onKeyDown={this.onKeyDown}
