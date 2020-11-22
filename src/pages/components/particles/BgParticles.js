@@ -1,6 +1,7 @@
 import React from 'react'
 import Particles from 'react-particles-js';
 import './BgParticles.css'
+import cat from '../../../resources/nyan cat.gif';
 
 const BgParticles = () =>
 {
@@ -284,7 +285,7 @@ const BgParticles = () =>
         "pauseOnBlur": true
       }}
     />
-    <img src='https://uiaczw.dm.files.1drv.com/y4mVk9JBysQz6qfiZN9gRBEaXkWrC7Gheq_2SxkHVjO9Dak-8IbbfkAMK-JQDHtq0JbthoiHJdBfbxgisPy-cN8zvFIh5VjUe68r7Ti_eaaUFa7IpbRzi08uGOQ8yBk7wwedic3SXwSSdACS-Kp0_mAQADTRMo8FRHgwsXWSfzVlqqiPFwzxOYta6cBIotvIpdGTk_Hv7oWbV_d2D7DE8gyKQ' 
+    <img src={cat} 
     alt='Cat'
     className='cat w-50 h-auto-ns'
     />
